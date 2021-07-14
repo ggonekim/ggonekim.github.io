@@ -1,37 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>计算机网络第一章--概述</title>
-    <url>/2021/07/12/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%A6%82%E8%BF%B0/</url>
-    <content><![CDATA[<p>计网第一章复习</p>
-<span id="more"></span>
-
-
-<h1 id="计算机网络考研复习"><a href="#计算机网络考研复习" class="headerlink" title="计算机网络考研复习"></a>计算机网络考研复习</h1><h2 id="第一章–计算机网络概述"><a href="#第一章–计算机网络概述" class="headerlink" title="第一章–计算机网络概述"></a>第一章–计算机网络概述</h2><h3 id="考点："><a href="#考点：" class="headerlink" title="考点："></a>考点：</h3><ul>
-<li>计算机网络的定义</li>
-<li>计算机网络的功能</li>
-<li>拓扑结构的类型</li>
-<li>OSI/RM,及其各层的功能</li>
-<li>TCP/IP参考模型</li>
-<li>协议、服务、接口</li>
-<li>性能指标</li>
-</ul>
-<h3 id="习题"><a href="#习题" class="headerlink" title="习题"></a>习题</h3><p>1-8. 计算网络都有哪些类别<br><br>1-9. 英特网的两大组成部分是？ 他们的特点是？工作特点有什么？<br><br>1-13. 计算机网络常用的性能指标有哪些<br><br>1-16. 协议、服务有什么区别？协议、服务、接口有什么关系？<br><br>1-17. 试述5层协议的网络体系结构的要点，包括煤层的主要功能。<br></p>
-<h3 id="脑图"><a href="#脑图" class="headerlink" title="脑图"></a>脑图</h3><p><img src="https://i.loli.net/2021/07/12/y5TeIJfEBRSP28Q.png" alt="pic"></p>
-]]></content>
-      <tags>
-        <tag>计算机网络概述</tag>
-        <tag>性能指标</tag>
-        <tag>ISO</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我的第一篇博客</title>
-    <url>/2021/07/09/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<p>博客测试</p>
-<span id="more"></span>]]></content>
-  </entry>
-  <entry>
     <title>计算机网络第二章-物理层</title>
     <url>/2021/07/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E7%89%A9%E7%90%86%E5%B1%82/</url>
     <content><![CDATA[<h1 id="计算机网络考研复习"><a href="#计算机网络考研复习" class="headerlink" title="计算机网络考研复习"></a>计算机网络考研复习</h1><h2 id="计算机网络第二章-物理层"><a href="#计算机网络第二章-物理层" class="headerlink" title="计算机网络第二章-物理层"></a>计算机网络第二章-物理层</h2><h3 id="考点："><a href="#考点：" class="headerlink" title="考点："></a>考点：</h3><ul>
@@ -113,6 +82,183 @@
         <tag>香农定理</tag>
         <tag>曼彻斯特编码</tag>
         <tag>PCM</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我的第一篇博客</title>
+    <url>/2021/07/09/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<p>博客测试</p>
+<span id="more"></span>]]></content>
+  </entry>
+  <entry>
+    <title>计算机网络第一章--概述</title>
+    <url>/2021/07/12/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%A6%82%E8%BF%B0/</url>
+    <content><![CDATA[<h1 id="计算机网络考研复习"><a href="#计算机网络考研复习" class="headerlink" title="计算机网络考研复习"></a>计算机网络考研复习</h1><h2 id="第一章–计算机网络概述"><a href="#第一章–计算机网络概述" class="headerlink" title="第一章–计算机网络概述"></a>第一章–计算机网络概述</h2><h3 id="考点："><a href="#考点：" class="headerlink" title="考点："></a>考点：</h3><ul>
+<li>计算机网络的定义</li>
+<li>计算机网络的功能</li>
+<li>拓扑结构的类型</li>
+<li>OSI/RM,及其各层的功能</li>
+<li>TCP/IP参考模型</li>
+<li>协议、服务、接口</li>
+<li>性能指标</li>
+</ul>
+<h3 id="习题"><a href="#习题" class="headerlink" title="习题"></a>习题</h3><p>1-8. 计算网络都有哪些类别<br><br>1-9. 英特网的两大组成部分是？ 他们的特点是？工作特点有什么？<br><br>1-13. 计算机网络常用的性能指标有哪些<br><br>1-16. 协议、服务有什么区别？协议、服务、接口有什么关系？<br><br>1-17. 试述5层协议的网络体系结构的要点，包括煤层的主要功能。<br></p>
+<h3 id="脑图"><a href="#脑图" class="headerlink" title="脑图"></a>脑图</h3><p><img src="https://i.loli.net/2021/07/12/y5TeIJfEBRSP28Q.png" alt="pic"></p>
+]]></content>
+      <tags>
+        <tag>计算机网络概述</tag>
+        <tag>性能指标</tag>
+        <tag>ISO</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>高等数学第一章函数与极限</title>
+    <url>/2021/07/14/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%87%BD%E6%95%B0%E4%B8%8E%E6%9E%81%E9%99%90/</url>
+    <content><![CDATA[<h1 id="考研数学复习"><a href="#考研数学复习" class="headerlink" title="考研数学复习"></a>考研数学复习</h1><h2 id="第一章函数与极限"><a href="#第一章函数与极限" class="headerlink" title="第一章函数与极限"></a>第一章函数与极限</h2><h3 id="考试内容要点精讲"><a href="#考试内容要点精讲" class="headerlink" title="考试内容要点精讲"></a>考试内容要点精讲</h3><h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><ul>
+<li>函数的概念及其常见函数</li>
+<li><strong>函数的性态</strong><h3 id="常考题型方法与技巧"><a href="#常考题型方法与技巧" class="headerlink" title="常考题型方法与技巧"></a>常考题型方法与技巧</h3></li>
+<li>复合函数</li>
+<li><strong>函数性态</strong></li>
+</ul>
+<p><strong>注：常见单调性和奇偶性</strong><br>㏑(1-x/1+x)、㏑(x+(1+x²)½) </p>
+<h4 id="奇偶性："><a href="#奇偶性：" class="headerlink" title="奇偶性："></a>奇偶性：</h4><ul>
+<li><strong>连续的奇函数其原函数都是偶函数</strong></li>
+<li><strong>连续的偶函数其原函数之一是奇函数</strong><h4 id="周期性："><a href="#周期性：" class="headerlink" title="周期性："></a>周期性：</h4></li>
+<li><strong>可导的周期函数导函数为周期函数</strong></li>
+<li><strong>f(x)可导且1周→f′(x)为周期函数</strong></li>
+<li><strong>周期函数f(x)的原函数为周期函数的充要条件是：在一个周期内f(x)的积分为0</strong><h4 id="有界性："><a href="#有界性：" class="headerlink" title="有界性："></a>有界性：</h4><img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/%E6%9C%89%E7%95%8C.png" alt="pic"></li>
+</ul>
+<h3 id="极限"><a href="#极限" class="headerlink" title="极限"></a>极限</h3><h3 id="考试内容要点精讲-1"><a href="#考试内容要点精讲-1" class="headerlink" title="考试内容要点精讲"></a>考试内容要点精讲</h3><ul>
+<li>极限的概念</li>
+</ul>
+<ol>
+<li>数列极限</li>
+<li>函数极限</li>
+</ol>
+<ul>
+<li><p><strong>极限的几何意义：</strong><br><br><img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/j1.png" alt="pic1"></p>
+</li>
+<li><p><strong>函数极限定理：</strong><br><img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/j2.png" alt="pic2"><br><img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/j3.png" alt="pic3"></p>
+</li>
+<li><p><strong>需要考虑左右极限的常见三种情况：</strong></p>
+</li>
+</ul>
+<ol>
+<li>分段函数在分界点的极限</li>
+<li>e的无穷型极限</li>
+<li>arctan∞型极限</li>
+</ol>
+<ul>
+<li><p><strong>极限的性质：</strong><br><img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/j4.png" alt="pic4"></p>
+</li>
+<li><p><strong>极限存在准则：</strong></p>
+</li>
+</ul>
+<ol>
+<li>夹逼准则</li>
+<li>单调有界准则</li>
+</ol>
+<ul>
+<li><strong>无穷小</strong></li>
+</ul>
+<ol>
+<li>高(0) 同(c!=0) 等(1) k阶</li>
+<li><strong>性质：和、积和无穷小*有界</strong></li>
+</ol>
+<ul>
+<li><strong>无穷大与无界</strong></li>
+</ul>
+<ol>
+<li><strong>无穷大是指对于n&gt;N以后的所有项都满足|Xn|&gt;M,然而无界指的是有这么个N项满足|Xn|&gt;M</strong></li>
+<li><strong>无穷大一定是无界，无界不是无穷大</strong><br><br>eg: 无穷大：1 2 3 4 5 … n<br><br>eg: 无 界： 1 0 3 0 5 … n,<strong>无界但不是无穷大，偶数项为0</strong><br>   </li>
+</ol>
+<ul>
+<li><strong>求极限7种方式：</strong></li>
+</ul>
+<ol>
+<li><strong>有理运算法则+三个推论(非零因子、分数形式极限存在，注意在分母时极限不能为0)</strong></li>
+<li><strong>利用基本极限求极限</strong></li>
+</ol>
+<p><img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/5.png" alt="pic5"></p>
+<ol start="3">
+<li><strong>利用等价无穷小代换求极限</strong><br><br>常见的等价无穷小：</li>
+</ol>
+<p><img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/6.png" alt="pic6"></p>
+<p>注：**(1+x)的a次方-1 ~ax，x→0.的推广如下：**</p>
+<p><img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/12.png" alt="pic12"></p>
+<p>等价无穷小替换的原则：<br><img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/7.png" alt="pic7"></p>
+<ol start="4">
+<li><strong>利用洛必达法则求极限：</strong></li>
+</ol>
+<p><img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/8.png" alt="pic8"></p>
+<ol start="5">
+<li><strong>利用泰勒公式求极限(0点的泰勒公式)：</strong></li>
+</ol>
+<p><img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/9.png" alt="pic9"></p>
+<p>常见的泰勒公式：<br></p>
+<p><img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/10.png" alt="pic10"></p>
+<ol start="9">
+<li><strong>利用中值定理求极限：</strong></li>
+</ol>
+<p><img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/11.png" alt="pic11"></p>
+<h4 id="处理七种未定式的方式："><a href="#处理七种未定式的方式：" class="headerlink" title="处理七种未定式的方式："></a>处理七种未定式的方式：</h4><ol>
+<li><p><strong>0/0型：；洛必达法则、等价无穷小、泰勒公式。其中可以夹杂着对原式尝试化简，包括：先算极限非零的因子，有理化，变量代换等、</strong></p>
+</li>
+<li><p><strong>∞/∞：洛必达法则、分子分母同时除以分子和分母中各项中最高阶的无穷大。注意：x趋向于-∞时的正负号</strong></p>
+</li>
+<li><p><strong>∞ - ∞：同分画成0/0型(适用于分式差)、根式有理化(适用于根式差)、提无穷因子然后等价代换、变量代换、泰勒等</strong></p>
+</li>
+<li><p>*<em>0 <em>∞ : 化为 0/0 或者 ∞/∞</em></em></p>
+</li>
+<li><p><strong>1的∞：</strong></p>
+</li>
+</ol>
+<p><img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/13.png" alt="pic13"></p>
+<h4 id="n项和的数列极限："><a href="#n项和的数列极限：" class="headerlink" title="n项和的数列极限："></a>n项和的数列极限：</h4><p>常用方法：</p>
+<ol>
+<li>夹逼准则 </li>
+<li>定积分定义</li>
+<li>级数求和<br></li>
+</ol>
+<p><strong>如何选择</strong>：<br><br> <strong>找主体和变化部分的量级关系：</strong></p>
+<ol>
+<li><strong>变化部分相对于主体来说是次量级，使用夹逼准则</strong></li>
+<li><strong>变化部分相对于主体是同量级，使用定积分定义</strong></li>
+<li><strong>常用结论：</strong></li>
+</ol>
+<p> <img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/14.png" alt="pic14"></p>
+<ol start="4">
+<li><strong>对于n项连乘的数列极限：</strong><br></li>
+</ol>
+<p> <strong>方法：</strong><br>    1. <strong>夹逼准则</strong><br>    2. <strong>取对数化为n项和</strong></p>
+<ol start="5">
+<li><strong>难点：对于递推关系式子定义的数列，求极限</strong></li>
+</ol>
+<p> <img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/15.png" alt="pic15">   </p>
+<ol start="5">
+<li><strong>无穷小的阶的比较定：阶结论如下</strong></li>
+</ol>
+<p> <img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/16.png" alt="pic16"></p>
+<h3 id="连续："><a href="#连续：" class="headerlink" title="连续："></a>连续：</h3><h4 id="考试内容精讲"><a href="#考试内容精讲" class="headerlink" title="考试内容精讲"></a>考试内容精讲</h4><ol>
+<li><strong>连续的概念</strong></li>
+<li><strong>间断点及其分类</strong></li>
+<li><strong>连续函数的性质</strong><h4 id="常考型方法与技巧"><a href="#常考型方法与技巧" class="headerlink" title="常考型方法与技巧"></a>常考型方法与技巧</h4></li>
+<li><strong>讨论连续性及其简短点的类型</strong></li>
+</ol>
+<p><img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/17.png" alt="pic17"></p>
+<ol start="2">
+<li><strong>介值定理、最值定理、零点定理的证明题</strong></li>
+</ol>
+<h2 id="第一章题型总结以及重点"><a href="#第一章题型总结以及重点" class="headerlink" title="第一章题型总结以及重点"></a>第一章题型总结以及重点</h2><p><img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/19.png" alt="pic19"></p>
+]]></content>
+      <categories>
+        <category>高等数学</category>
+        <category>函数与极限</category>
+      </categories>
+      <tags>
+        <tag>函数</tag>
+        <tag>极限</tag>
+        <tag>连续</tag>
       </tags>
   </entry>
 </search>
