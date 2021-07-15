@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>计算机网络第三章-数据链路层一 - ggonekim-曾是惊鸿照影来</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="计算机网络考研复习第三章—数据链路层一考点1．数据链路层的功能2．常见的组帧的方法3．循环冗余校验码的原理4．多帧滑动窗口与后退 N 帧协议5．多路复用技术的一般形式6．CSMA/CD 协议7．局域,"> 
+    <meta name="author" content="高槻泉"> 
+    <link rel="alternative" href="atom.xml" title="ggonekim-曾是惊鸿照影来" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">ggonekim-曾是惊鸿照影来</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://example.com"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">计算机网络第三章-数据链路层一</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">计算机网络第三章-数据链路层一</h1>
+        <div class="stuff">
+            <span>七月 15, 2021</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/CRC/" rel="tag">CRC</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/GBN-%E5%9B%9E%E9%80%80N%E5%B8%A7%E5%8D%8F%E8%AE%AE/" rel="tag">GBN(回退N帧协议)</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/SR-%E9%80%89%E6%8B%A9%E9%87%8D%E4%BC%A0%E5%8D%8F%E8%AE%AE/" rel="tag">SR(选择重传协议)</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E5%81%9C%E6%AD%A2%E7%AD%89%E5%BE%85%E5%8D%8F%E8%AE%AE/" rel="tag">停止等待协议</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E5%AD%97%E7%AC%A6%E5%A1%AB%E5%85%85/" rel="tag">字符填充</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/" rel="tag">数据链路层</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E6%B5%B7%E6%98%8E%E5%85%AC%E5%BC%8F/" rel="tag">海明公式</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E9%80%8F%E6%98%8E%E4%BC%A0%E8%BE%93/" rel="tag">透明传输</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E9%9B%B6%E6%AF%94%E7%89%B9%E5%A1%AB%E5%85%85/" rel="tag">零比特填充</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <h1 id="计算机网络考研复习"><a href="#计算机网络考研复习" class="headerlink" title="计算机网络考研复习"></a>计算机网络考研复习</h1><h2 id="第三章—数据链路层一"><a href="#第三章—数据链路层一" class="headerlink" title="第三章—数据链路层一"></a>第三章—数据链路层一</h2><h2 id="考点"><a href="#考点" class="headerlink" title="考点"></a>考点</h2><p><strong>1．数据链路层的功能</strong><br><br><strong>2．常见的组帧的方法</strong><br><br><strong>3．循环冗余校验码的原理</strong><br><br><strong>4．多帧滑动窗口与后退 N 帧协议</strong><br><br><strong>5．多路复用技术的一般形式</strong><br><br><strong>6．CSMA/CD 协议</strong><br><br><strong>7．局域网的主要特征</strong><br><br><strong>8．以太网物理层和 MAC 子层的功能</strong><br><br><strong>9．以太网的帧格式</strong><br><br><strong>10．广域网的主要特性</strong><br><br><strong>11. 数据报服务的特点</strong><br><br><strong>12．虚电路服务与数据报服务的主要区别</strong><br><br><strong>13．PPP 组成</strong><br><br><strong>14．HDLC 的帧结构</strong><br><br><strong>15．网桥的概念以及类型</strong><br><br><strong>16．以太网的工作原理和信道的利用率</strong><br><br><strong>17．纯 ALOHA 和时隙 ALOHA 的结论</strong><br><br><strong>18. CSMA/CD 的原理和吞吐量的计算</strong><br><br><strong>19．VLAN 的概念</strong><br><br><strong>20．划分 VLAN 的方法</strong><br></p>
+<hr>
+<ul>
+<li><strong>数据链路层的功能</strong><br></li>
+</ul>
+<ol>
+<li><p><strong>为网络层提供服务：无确认无连接服务、有确认无连接服务、有确认面向连接服务</strong></p>
+</li>
+<li><p><strong>链路管理，即连接的建立、维持、释放(用于面向连接的服务</strong></p>
+</li>
+<li><p><strong>组装成帧</strong></p>
+</li>
+<li><p><strong>流量控制</strong></p>
+</li>
+<li><p><strong>差错控制</strong></p>
+</li>
+</ol>
+<hr>
+<ul>
+<li><strong>数据链路层属于计算机网络的低层。数据链路层使用的信道主要有以下两种类型：</strong></li>
+</ul>
+<ol>
+<li><p><strong>点对点信道</strong></p>
+</li>
+<li><p><strong>广播通信</strong></p>
+</li>
+</ol>
+<hr>
+<ul>
+<li><strong>链路和数据链路的区别：</strong></li>
+</ul>
+<ol>
+<li><p><strong>链路：网络中的两个节点之间的物理通道。链路的传输介质主要有双绞线、光纤和微波。氛围有线链路和无线链路</strong></p>
+</li>
+<li><p><strong>数据链路：网络中的两个节点之间的逻辑通道。 把实现控制数据传输协议的硬件和软件加到链路上就构成了数据链路。</strong></p>
+</li>
+</ol>
+<ul>
+<li><strong>链路层的协议数据单元————帧</strong></li>
+<li><strong>网络层的协议数据单元————IP数据报(数据报、分组、包)</strong></li>
+</ul>
+<hr>
+<ul>
+<li><strong>封装成帧：</strong><br></li>
+</ul>
+<p><strong>网络层的IP数据报下传到数据链路层，成为帧的数据部分，再在其前面和后面分别添加上首部和尾部，封装成完整的帧</strong></p>
+<ul>
+<li><p><strong>MTU最大传送单元： 帧的部分不能超过会的MTU数值</strong></p>
+</li>
+<li><p><strong>字节填充：</strong><br></p>
+</li>
+</ul>
+<p> <strong>为了解决透明传输，对于面向字节的物理链路采用字节填充，在数据中出现的标记字符前面插入一个转义字符，例如”ESC”，接收端的数据链路层对其后面出现的标记字符不会认为它是帧定界符，并且在送往网络层之前删除该字符。</strong></p>
+<ul>
+<li><strong>当物理链路是面向比特传输服务时，采用比特填充实现透明传输。</strong><br></li>
+</ul>
+<p><strong>零比特传输：5 “1”,1 “0”</strong></p>
+<hr>
+<ul>
+<li><strong>差错检测：</strong></li>
+</ul>
+<ol>
+<li><p><strong>差错来源：传输中的差错都是由于噪声引起的</strong></p>
+</li>
+<li><p><strong>差错的分类：</strong><br></p>
+</li>
+</ol>
+<p><strong>位错：比特位出错，1变成0,0变成1。</strong><br><br><strong>帧错：丢失、重复、 失序</strong></p>
+<ol start="3">
+<li><strong>差错控制(比特错)的解决方法</strong><br></li>
+</ol>
+<p><strong>检错编码： 奇偶校验码、循环冗余码CRC</strong><br><strong>纠错编码： 海明码</strong></p>
+<p><strong>奇偶检验码：</strong></p>
+<p><img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/30.png" alt="pic30"></p>
+<p><strong>循环冗余码CRC：会计算，会验证正确性。</strong></p>
+<p><strong>海明码：</strong></p>
+<p><img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/31.png" alt="pic31"></p>
+<p><img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/32.png" alt="pic32"></p>
+<p><img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/33.png" alt="pic33"></p>
+<hr>
+<ul>
+<li><strong>数据链路层的流量控制：</strong><br></li>
+</ul>
+<p><strong>流量控制手段：接收方收不下就不回复确认</strong><br><br><strong>流量控制的方法</strong><br></p>
+<ol>
+<li><p><strong>停止-等待协议 ： 发送窗口大小=1，接受窗口大小=1。</strong></p>
+</li>
+<li><p><strong>GBN 后退N帧协议：发送窗口大小&gt;1,接受窗口大小=1。</strong></p>
+</li>
+<li><p><strong>选择重传协议SR：发送窗口大小&gt;1,接受窗口大小&gt;1.</strong></p>
+</li>
+</ol>
+<ul>
+<li><strong>可靠传输、滑动窗口、流量控制</strong><br></li>
+</ul>
+<ol>
+<li><strong>可靠传输：发送端发啥，接收端收啥。</strong><br></li>
+<li><strong>流量控制：控制发送速率，使接收方有足够的缓冲空间来接收每一个帧。</strong><br></li>
+<li><strong>滑动窗口解决：流量控制(收不下就不给确认，想发也发不了)，可靠传输(发送方自动传送)</strong></li>
+</ol>
+<ul>
+<li><strong>挺等协议—有差错情况</strong></li>
+</ul>
+<ol>
+<li><p><strong>数据帧丢失或者检测到帧出错</strong></p>
+</li>
+<li><p><strong>ACK丢失</strong></p>
+</li>
+<li><p><strong>ACK迟到</strong></p>
+</li>
+</ol>
+<ul>
+<li><strong>信道利用率</strong></li>
+</ul>
+<p><img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/34.png" alt="pic34"><br></p>
+<ul>
+<li><strong>GBN协议</strong></li>
+</ul>
+<p><img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/35.png" alt="pic35"></p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                </ul>
+            
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+		data-enable='false'
+        data-ae='false'
+        data-ci=''
+        data-cs=''
+        data-r=''
+        data-o=''
+        data-a=''
+        data-d='false'
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>

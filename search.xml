@@ -1,65 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>我的第一篇博客</title>
-    <url>/2021/07/09/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<p>博客测试</p>
-<span id="more"></span>]]></content>
-  </entry>
-  <entry>
-    <title>计算机网络第一章--概述</title>
-    <url>/2021/07/12/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%A6%82%E8%BF%B0/</url>
-    <content><![CDATA[<h1 id="计算机网络考研复习"><a href="#计算机网络考研复习" class="headerlink" title="计算机网络考研复习"></a>计算机网络考研复习</h1><h2 id="第一章–计算机网络概述"><a href="#第一章–计算机网络概述" class="headerlink" title="第一章–计算机网络概述"></a>第一章–计算机网络概述</h2><h3 id="考点："><a href="#考点：" class="headerlink" title="考点："></a>考点：</h3><ul>
-<li>计算机网络的定义<br></li>
-</ul>
-<p><strong>一些互联的、可以自治的计算机的集合</strong></p>
+    <title>计算机网络第三章-数据链路层一</title>
+    <url>/2021/07/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AC%AC%E4%B8%89%E7%AB%A0-%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82%E4%B8%80/</url>
+    <content><![CDATA[<h1 id="计算机网络考研复习"><a href="#计算机网络考研复习" class="headerlink" title="计算机网络考研复习"></a>计算机网络考研复习</h1><h2 id="第三章—数据链路层一"><a href="#第三章—数据链路层一" class="headerlink" title="第三章—数据链路层一"></a>第三章—数据链路层一</h2><h2 id="考点"><a href="#考点" class="headerlink" title="考点"></a>考点</h2><p><strong>1．数据链路层的功能</strong><br><br><strong>2．常见的组帧的方法</strong><br><br><strong>3．循环冗余校验码的原理</strong><br><br><strong>4．多帧滑动窗口与后退 N 帧协议</strong><br><br><strong>5．多路复用技术的一般形式</strong><br><br><strong>6．CSMA/CD 协议</strong><br><br><strong>7．局域网的主要特征</strong><br><br><strong>8．以太网物理层和 MAC 子层的功能</strong><br><br><strong>9．以太网的帧格式</strong><br><br><strong>10．广域网的主要特性</strong><br><br><strong>11. 数据报服务的特点</strong><br><br><strong>12．虚电路服务与数据报服务的主要区别</strong><br><br><strong>13．PPP 组成</strong><br><br><strong>14．HDLC 的帧结构</strong><br><br><strong>15．网桥的概念以及类型</strong><br><br><strong>16．以太网的工作原理和信道的利用率</strong><br><br><strong>17．纯 ALOHA 和时隙 ALOHA 的结论</strong><br><br><strong>18. CSMA/CD 的原理和吞吐量的计算</strong><br><br><strong>19．VLAN 的概念</strong><br><br><strong>20．划分 VLAN 的方法</strong><br></p>
+<hr>
 <ul>
-<li>计算机网络的功能<br></li>
+<li><strong>数据链路层的功能</strong><br></li>
 </ul>
-<p><strong>主要的功能有数据通信、资源共享</strong></p>
+<ol>
+<li><p><strong>为网络层提供服务：无确认无连接服务、有确认无连接服务、有确认面向连接服务</strong></p>
+</li>
+<li><p><strong>链路管理，即连接的建立、维持、释放(用于面向连接的服务</strong></p>
+</li>
+<li><p><strong>组装成帧</strong></p>
+</li>
+<li><p><strong>流量控制</strong></p>
+</li>
+<li><p><strong>差错控制</strong></p>
+</li>
+</ol>
+<hr>
 <ul>
-<li>拓扑结构的类型<br></li>
+<li><strong>数据链路层属于计算机网络的低层。数据链路层使用的信道主要有以下两种类型：</strong></li>
 </ul>
-<p><strong>总线型、星型、环型、网状型</strong></p>
+<ol>
+<li><p><strong>点对点信道</strong></p>
+</li>
+<li><p><strong>广播通信</strong></p>
+</li>
+</ol>
+<hr>
 <ul>
-<li>OSI/RM,及其各层的功能<br></li>
+<li><strong>链路和数据链路的区别：</strong></li>
 </ul>
-<p><strong>七层 物链网输会示用</strong></p>
+<ol>
+<li><p><strong>链路：网络中的两个节点之间的物理通道。链路的传输介质主要有双绞线、光纤和微波。氛围有线链路和无线链路</strong></p>
+</li>
+<li><p><strong>数据链路：网络中的两个节点之间的逻辑通道。 把实现控制数据传输协议的硬件和软件加到链路上就构成了数据链路。</strong></p>
+</li>
+</ol>
 <ul>
-<li>TCP/IP参考模型<br></li>
+<li><strong>链路层的协议数据单元————帧</strong></li>
+<li><strong>网络层的协议数据单元————IP数据报(数据报、分组、包)</strong></li>
 </ul>
-<p><strong>五层</strong></p>
+<hr>
 <ul>
-<li>协议、服务、接口<br></li>
+<li><strong>封装成帧：</strong><br></li>
 </ul>
-<p><strong>协议：为进行网络中的数据交换而建立的规则、标准或者约定。</strong><br><br><strong>协议的三个要素：</strong><br><br><strong>1.语法：数据与控制信息的结构或格式</strong><br><strong>2.语义：要发送何种控制信息，完成何种动作以及做出何种响应</strong><br><strong>3.同步：事件实现顺序的详细说明</strong></p>
+<p><strong>网络层的IP数据报下传到数据链路层，成为帧的数据部分，再在其前面和后面分别添加上首部和尾部，封装成完整的帧</strong></p>
 <ul>
-<li>性能指标<br></li>
+<li><p><strong>MTU最大传送单元： 帧的部分不能超过会的MTU数值</strong></p>
+</li>
+<li><p><strong>字节填充：</strong><br></p>
+</li>
 </ul>
-<p><strong>具体定量的描述网络的技术性能，主要包括：速率、带宽、吞吐量、时延、时延带宽积、往返时间、利用率</strong><br><br><strong>带宽：网络的通信线路传送数据的能力，单位时间从网络的某一个点到另一个点所能通过的”最高数据率”</strong><br><br><strong>时延：包括发送时延(发送的第一个开始到最后有一个发送完)、传播时延、处理时延、排队时延。前两个要会计算。</strong><br><br><strong>时延带宽积：传播时延*带宽，意义：以比特为单位的链路长度，有时会让求媒体介质上传播的比特数</strong><br><br><strong>往返时间：第一个比特发送方发出，接收方接受到后发送确认信号，发送方接受到信号这段时间。计算方式： 往返时间 =传播时延 * 2  +末端处理时间+排队时延+其他时延。(主要的是传播时延)</strong></p>
+<p> <strong>为了解决透明传输，对于面向字节的物理链路采用字节填充，在数据中出现的标记字符前面插入一个转义字符，例如”ESC”，接收端的数据链路层对其后面出现的标记字符不会认为它是帧定界符，并且在送往网络层之前删除该字符。</strong></p>
 <ul>
-<li>非性能指标：<br><strong>在宏观上整体评价网络的外在表现,主要包括：</strong></li>
+<li><strong>当物理链路是面向比特传输服务时，采用比特填充实现透明传输。</strong><br></li>
 </ul>
-<p><strong>费用、质量、标准化、可靠性、可扩展性和可升级性、易于管理和维护</strong></p>
-<h3 id="习题"><a href="#习题" class="headerlink" title="习题"></a>习题</h3><p>1-8. 计算网络都有哪些类别<br><br>1-9. 英特网的两大组成部分是？ 他们的特点是？工作特点有什么？<br><br>1-13. 计算机网络常用的性能指标有哪些<br></p>
-<p>1-16. 协议、服务有什么区别？协议、服务、接口有什么关系？<br><br><strong>1.协议是控制两个对等实体进行通信的规则的集合。在协议的控制下，两个对等实体间的通信使得本层能够向上一层提供服务，而要实现本层协议，还需要使用下面一层提供服务。</strong><br></p>
-<p><strong>协议和服务的概念的区分：</strong>  <br><br><strong>1、协议的实现保证了能够向上一层提供服务。本层的服务用户只能看见服务而无法看见下面的协议。下面的协议对上面的服务用户是透明的。</strong></p>
-<p><strong>2、协议是“水平的”，即协议是控制两个对等实体进行通信的规则。但服务是“垂直的”，即服务是由下层通过层间接口向上层提供的。上层使用所提供的服务必须与下层交换一些命令，这些命令在OSI中称为服务原语.</strong></p>
-<p>1-17. 试述5层协议的网络体系结构的要点，包括煤层的主要功能。<br><br><strong>综合OSI 和TCP/IP 的优点，采用一种原理体系结构。</strong></p>
-<p><strong>各层的主要功能：<br>物理层: 物理层的任务就是透明地传送比特流。（注意：传递信息的物理媒体，如双绞线、同轴电缆、光缆等，是在物理层的下面，当做第0 层.） <br>物理层还要确定连接电缆插头的定义及连接法。</strong><br></p>
-<p><strong>数据链路层: 数据链路层的任务是在两个相邻结点间的线路上无差错地传送以帧（frame）为单位的数据。每一帧包括数据和必要的控制信息。</strong><br></p>
-<p><strong>网络层: 网络层的任务就是要选择合适的路由，使发送站的运输层所传下来的分组能够 <br>正确无误地按照地址找到目的站，并交付给目的站的运输层。</strong><br></p>
-<p><strong>运输层: 运输层的任务是向上一层的进行通信的两个进程之间提供一个可靠的端到端服务，使它们看不见运输层以下的数据通信的细节。应用层 应用层直接为用户的应用进程提供服务。</strong></p>
-<p>1-20. 网络体系结构为何要分层。<br><br><strong>分层的好处：<br><br>①各层之间是独立的。某一层可以使用其下一层提供的服务而不需要知道服务是如何实现的。<br><br>②灵活性好。当某一层发生变化时，只要其接口关系不变，则这层以上或以下的各层均不受影响。<br><br>③结构上可分割开。各层可以采用最合适的技术来实现<br><br>④易于实现和维护。<br><br>⑤能促进标准化工作。</strong></p>
-<h3 id="脑图"><a href="#脑图" class="headerlink" title="脑图"></a>脑图</h3><p><img src="https://i.loli.net/2021/07/12/y5TeIJfEBRSP28Q.png" alt="pic"></p>
+<p><strong>零比特传输：5 “1”,1 “0”</strong></p>
+<hr>
+<ul>
+<li><strong>差错检测：</strong></li>
+</ul>
+<ol>
+<li><p><strong>差错来源：传输中的差错都是由于噪声引起的</strong></p>
+</li>
+<li><p><strong>差错的分类：</strong><br></p>
+</li>
+</ol>
+<p><strong>位错：比特位出错，1变成0,0变成1。</strong><br><br><strong>帧错：丢失、重复、 失序</strong></p>
+<ol start="3">
+<li><strong>差错控制(比特错)的解决方法</strong><br></li>
+</ol>
+<p><strong>检错编码： 奇偶校验码、循环冗余码CRC</strong><br><strong>纠错编码： 海明码</strong></p>
+<p><strong>奇偶检验码：</strong></p>
+<p><img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/30.png" alt="pic30"></p>
+<p><strong>循环冗余码CRC：会计算，会验证正确性。</strong></p>
+<p><strong>海明码：</strong></p>
+<p><img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/31.png" alt="pic31"></p>
+<p><img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/32.png" alt="pic32"></p>
+<p><img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/33.png" alt="pic33"></p>
+<hr>
+<ul>
+<li><strong>数据链路层的流量控制：</strong><br></li>
+</ul>
+<p><strong>流量控制手段：接收方收不下就不回复确认</strong><br><br><strong>流量控制的方法</strong><br></p>
+<ol>
+<li><p><strong>停止-等待协议 ： 发送窗口大小=1，接受窗口大小=1。</strong></p>
+</li>
+<li><p><strong>GBN 后退N帧协议：发送窗口大小&gt;1,接受窗口大小=1。</strong></p>
+</li>
+<li><p><strong>选择重传协议SR：发送窗口大小&gt;1,接受窗口大小&gt;1.</strong></p>
+</li>
+</ol>
+<ul>
+<li><strong>可靠传输、滑动窗口、流量控制</strong><br></li>
+</ul>
+<ol>
+<li><strong>可靠传输：发送端发啥，接收端收啥。</strong><br></li>
+<li><strong>流量控制：控制发送速率，使接收方有足够的缓冲空间来接收每一个帧。</strong><br></li>
+<li><strong>滑动窗口解决：流量控制(收不下就不给确认，想发也发不了)，可靠传输(发送方自动传送)</strong></li>
+</ol>
+<ul>
+<li><strong>挺等协议—有差错情况</strong></li>
+</ul>
+<ol>
+<li><p><strong>数据帧丢失或者检测到帧出错</strong></p>
+</li>
+<li><p><strong>ACK丢失</strong></p>
+</li>
+<li><p><strong>ACK迟到</strong></p>
+</li>
+</ol>
+<ul>
+<li><strong>信道利用率</strong></li>
+</ul>
+<p><img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/34.png" alt="pic34"><br></p>
+<ul>
+<li><strong>GBN协议</strong></li>
+</ul>
+<p><img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/35.png" alt="pic35"></p>
 ]]></content>
-      <categories>
-        <category>计算第网络</category>
-      </categories>
       <tags>
-        <tag>计算机网络概述</tag>
-        <tag>性能指标</tag>
-        <tag>ISO</tag>
+        <tag>数据链路层</tag>
+        <tag>透明传输</tag>
+        <tag>字符填充</tag>
+        <tag>零比特填充</tag>
+        <tag>CRC</tag>
+        <tag>海明公式</tag>
+        <tag>停止等待协议</tag>
+        <tag>GBN(回退N帧协议)</tag>
+        <tag>SR(选择重传协议)</tag>
       </tags>
   </entry>
   <entry>
@@ -213,6 +286,12 @@
       </tags>
   </entry>
   <entry>
+    <title>我的第一篇博客</title>
+    <url>/2021/07/09/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<p>博客测试</p>
+<span id="more"></span>]]></content>
+  </entry>
+  <entry>
     <title>计算机网络第二章-物理层</title>
     <url>/2021/07/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E7%89%A9%E7%90%86%E5%B1%82/</url>
     <content><![CDATA[<h1 id="计算机网络考研复习"><a href="#计算机网络考研复习" class="headerlink" title="计算机网络考研复习"></a>计算机网络考研复习</h1><h2 id="计算机网络第二章-物理层"><a href="#计算机网络第二章-物理层" class="headerlink" title="计算机网络第二章-物理层"></a>计算机网络第二章-物理层</h2><h3 id="考点："><a href="#考点：" class="headerlink" title="考点："></a>考点：</h3><ul>
@@ -297,6 +376,62 @@
         <tag>香农定理</tag>
         <tag>曼彻斯特编码</tag>
         <tag>PCM</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机网络第一章--概述</title>
+    <url>/2021/07/12/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%A6%82%E8%BF%B0/</url>
+    <content><![CDATA[<h1 id="计算机网络考研复习"><a href="#计算机网络考研复习" class="headerlink" title="计算机网络考研复习"></a>计算机网络考研复习</h1><h2 id="第一章–计算机网络概述"><a href="#第一章–计算机网络概述" class="headerlink" title="第一章–计算机网络概述"></a>第一章–计算机网络概述</h2><h3 id="考点："><a href="#考点：" class="headerlink" title="考点："></a>考点：</h3><ul>
+<li>计算机网络的定义<br></li>
+</ul>
+<p><strong>一些互联的、可以自治的计算机的集合</strong></p>
+<ul>
+<li>计算机网络的功能<br></li>
+</ul>
+<p><strong>主要的功能有数据通信、资源共享</strong></p>
+<ul>
+<li>拓扑结构的类型<br></li>
+</ul>
+<p><strong>总线型、星型、环型、网状型</strong></p>
+<ul>
+<li>OSI/RM,及其各层的功能<br></li>
+</ul>
+<p><strong>七层 物链网输会示用</strong></p>
+<ul>
+<li>TCP/IP参考模型<br></li>
+</ul>
+<p><strong>五层</strong></p>
+<ul>
+<li>协议、服务、接口<br></li>
+</ul>
+<p><strong>协议：为进行网络中的数据交换而建立的规则、标准或者约定。</strong><br><br><strong>协议的三个要素：</strong><br><br><strong>1.语法：数据与控制信息的结构或格式</strong><br><strong>2.语义：要发送何种控制信息，完成何种动作以及做出何种响应</strong><br><strong>3.同步：事件实现顺序的详细说明</strong></p>
+<ul>
+<li>性能指标<br></li>
+</ul>
+<p><strong>具体定量的描述网络的技术性能，主要包括：速率、带宽、吞吐量、时延、时延带宽积、往返时间、利用率</strong><br><br><strong>带宽：网络的通信线路传送数据的能力，单位时间从网络的某一个点到另一个点所能通过的”最高数据率”</strong><br><br><strong>时延：包括发送时延(发送的第一个开始到最后有一个发送完)、传播时延、处理时延、排队时延。前两个要会计算。</strong><br><br><strong>时延带宽积：传播时延*带宽，意义：以比特为单位的链路长度，有时会让求媒体介质上传播的比特数</strong><br><br><strong>往返时间：第一个比特发送方发出，接收方接受到后发送确认信号，发送方接受到信号这段时间。计算方式： 往返时间 =传播时延 * 2  +末端处理时间+排队时延+其他时延。(主要的是传播时延)</strong></p>
+<ul>
+<li>非性能指标：<br><strong>在宏观上整体评价网络的外在表现,主要包括：</strong></li>
+</ul>
+<p><strong>费用、质量、标准化、可靠性、可扩展性和可升级性、易于管理和维护</strong></p>
+<h3 id="习题"><a href="#习题" class="headerlink" title="习题"></a>习题</h3><p>1-8. 计算网络都有哪些类别<br><br>1-9. 英特网的两大组成部分是？ 他们的特点是？工作特点有什么？<br><br>1-13. 计算机网络常用的性能指标有哪些<br></p>
+<p>1-16. 协议、服务有什么区别？协议、服务、接口有什么关系？<br><br><strong>1.协议是控制两个对等实体进行通信的规则的集合。在协议的控制下，两个对等实体间的通信使得本层能够向上一层提供服务，而要实现本层协议，还需要使用下面一层提供服务。</strong><br></p>
+<p><strong>协议和服务的概念的区分：</strong>  <br><br><strong>1、协议的实现保证了能够向上一层提供服务。本层的服务用户只能看见服务而无法看见下面的协议。下面的协议对上面的服务用户是透明的。</strong></p>
+<p><strong>2、协议是“水平的”，即协议是控制两个对等实体进行通信的规则。但服务是“垂直的”，即服务是由下层通过层间接口向上层提供的。上层使用所提供的服务必须与下层交换一些命令，这些命令在OSI中称为服务原语.</strong></p>
+<p>1-17. 试述5层协议的网络体系结构的要点，包括煤层的主要功能。<br><br><strong>综合OSI 和TCP/IP 的优点，采用一种原理体系结构。</strong></p>
+<p><strong>各层的主要功能：<br>物理层: 物理层的任务就是透明地传送比特流。（注意：传递信息的物理媒体，如双绞线、同轴电缆、光缆等，是在物理层的下面，当做第0 层.） <br>物理层还要确定连接电缆插头的定义及连接法。</strong><br></p>
+<p><strong>数据链路层: 数据链路层的任务是在两个相邻结点间的线路上无差错地传送以帧（frame）为单位的数据。每一帧包括数据和必要的控制信息。</strong><br></p>
+<p><strong>网络层: 网络层的任务就是要选择合适的路由，使发送站的运输层所传下来的分组能够 <br>正确无误地按照地址找到目的站，并交付给目的站的运输层。</strong><br></p>
+<p><strong>运输层: 运输层的任务是向上一层的进行通信的两个进程之间提供一个可靠的端到端服务，使它们看不见运输层以下的数据通信的细节。应用层 应用层直接为用户的应用进程提供服务。</strong></p>
+<p>1-20. 网络体系结构为何要分层。<br><br><strong>分层的好处：<br><br>①各层之间是独立的。某一层可以使用其下一层提供的服务而不需要知道服务是如何实现的。<br><br>②灵活性好。当某一层发生变化时，只要其接口关系不变，则这层以上或以下的各层均不受影响。<br><br>③结构上可分割开。各层可以采用最合适的技术来实现<br><br>④易于实现和维护。<br><br>⑤能促进标准化工作。</strong></p>
+<h3 id="脑图"><a href="#脑图" class="headerlink" title="脑图"></a>脑图</h3><p><img src="https://i.loli.net/2021/07/12/y5TeIJfEBRSP28Q.png" alt="pic"></p>
+]]></content>
+      <categories>
+        <category>计算第网络</category>
+      </categories>
+      <tags>
+        <tag>计算机网络概述</tag>
+        <tag>性能指标</tag>
+        <tag>ISO</tag>
       </tags>
   </entry>
 </search>
