@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>计算机网络第三章--数据链路层二 - ggonekim-曾是惊鸿照影来</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="计算机网络考研复习第三章—数据链路层二考点1．数据链路层的功能2．常见的组帧的方法3．循环冗余校验码的原理4．多帧滑动窗口与后退 N 帧协议5．多路复用技术的一般形式6．CSMA/CD 协议7．局域,"> 
+    <meta name="author" content="高槻泉"> 
+    <link rel="alternative" href="atom.xml" title="ggonekim-曾是惊鸿照影来" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">ggonekim-曾是惊鸿照影来</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://example.com"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">计算机网络第三章--数据链路层二</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">计算机网络第三章--数据链路层二</h1>
+        <div class="stuff">
+            <span>七月 16, 2021</span>
+            
+
+        </div>
+        <div class="content markdown">
+            <h1 id="计算机网络考研复习"><a href="#计算机网络考研复习" class="headerlink" title="计算机网络考研复习"></a>计算机网络考研复习</h1><h2 id="第三章—数据链路层二"><a href="#第三章—数据链路层二" class="headerlink" title="第三章—数据链路层二"></a>第三章—数据链路层二</h2><h2 id="考点"><a href="#考点" class="headerlink" title="考点"></a>考点</h2><p><strong>1．数据链路层的功能</strong><br><br><strong>2．常见的组帧的方法</strong><br><br><strong>3．循环冗余校验码的原理</strong><br><br><strong>4．多帧滑动窗口与后退 N 帧协议</strong><br><br><strong>5．多路复用技术的一般形式</strong><br><br><strong>6．CSMA/CD 协议</strong><br><br><strong>7．局域网的主要特征</strong><br><br><strong>8．以太网物理层和 MAC 子层的功能</strong><br><br><strong>9．以太网的帧格式</strong><br><br><strong>10．广域网的主要特性</strong><br><br><strong>11. 数据报服务的特点</strong><br><br><strong>12．虚电路服务与数据报服务的主要区别</strong><br><br><strong>13．PPP 组成</strong><br><br><strong>14．HDLC 的帧结构</strong><br><br><strong>15．网桥的概念以及类型</strong><br><br><strong>16．以太网的工作原理和信道的利用率</strong><br><br><strong>17．纯 ALOHA 和时隙 ALOHA 的结论</strong><br><br><strong>18. CSMA/CD 的原理和吞吐量的计算</strong><br><br><strong>19．VLAN 的概念</strong><br><br><strong>20．划分 VLAN 的方法</strong><br></p>
+<hr>
+<ul>
+<li><strong>多路复用技术的一般形式</strong></li>
+</ul>
+<ul>
+<li><strong>介质访问控制</strong></li>
+</ul>
+<p><img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/40.png" alt="pic40"></p>
+<ul>
+<li><strong>CSMA/CD载波监听多点接入/碰撞检测。 先听后发，边听边发，遇到冲突立即停止，过一段时间再重发</strong></li>
+</ul>
+<p><img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/41.png" alt="pic41"></p>
+<hr>
+<ul>
+<li><strong>传播时延对载波监听的影响</strong><br></li>
+</ul>
+<p><strong>1.电磁波在1KM电缆的传播时延约为5us。</strong><br><br><strong>2.总线上端到端的传播时延记为τ</strong><br><br><strong>3.发送端最多需要2τ(争用期/碰撞窗口)就能发现自己发送的数据是否与其他站发送的数据相碰撞。</strong><br><br><strong>4.使用CSMA/CD协议的以太网只能进行半双工通信</strong><br><br><strong>5.一个站发送完数据口，只要经过2τ(争用期)还没检测到碰撞，就能肯定这次不会发生碰撞</strong></p>
+<hr>
+<ul>
+<li><strong>如何确定碰撞的回传时机：采用截断二进制指数退避算法</strong></li>
+</ul>
+<p><img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/42.png" alt="pic42"></p>
+<hr>
+<ul>
+<li><strong>最小帧长</strong><br></li>
+</ul>
+<p><strong>帧的传输时延至少要两倍于信号在总线中的传播时延，即 帧长/数据传输速率 &gt;= 2τ</strong><br><br><strong>最小帧长 = 总线传播时延 * 数据传输速率*2 = 2τ * 数据传输速率</strong><br><br><strong>以太网规定凡长度小于64字节的帧都是由于冲突而异常终止的无效帧。</strong></p>
+<hr>
+<ul>
+<li><strong>局域网的主要特点：网络为一个单位所有，且地理范围和站点数目均有限。</strong><br></li>
+</ul>
+<p><strong>优点：</strong><br><br><strong>1.具有广播功能，从一个站点能方便访问全网。局域网上的主机可以共享连接在区域网上面的各种硬件和软件资源</strong><br><br><strong>2.便于系统的扩展和演变</strong><br><br><strong>3.提高了系统的可靠性、可用性和生存性</strong><br><br><strong>4.局域网具有高数据传输速率（10～10000Mbps）、低误码率（&lt;10-8）的高质量数据传输环境。</strong></p>
+<ul>
+<li><strong>局域网按照网络拓扑结构分类包括：总线网、环形网、星形网</strong></li>
+</ul>
+<hr>
+<ul>
+<li><strong>以太网的物理层和MAC子层的功能</strong><br></li>
+</ul>
+<p><strong>1. 以太网的物理层功能：</strong><br><br><strong>2. MAC子层的功能：包括数据帧的封装/卸装，帧的寻址和识别，帧的接受和发送，链路管理，帧的差错控制等。MAC子层的存在屏蔽了不同物理链路种类的差异性。</strong></p>
+<ul>
+<li><strong>以太网两个标准</strong><br></li>
+</ul>
+<p><strong>1. DIX Ethernet V2</strong><br><br><strong>2. IEEE 802.3</strong></p>
+<ul>
+<li><strong>以太网的帧的格式:</strong></li>
+</ul>
+<p><img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/43.png" alt="pic43"></p>
+<hr>
+<ul>
+<li><strong>广域网的主要特性</strong><br></li>
+</ul>
+<p><strong>1.广域网可以不断扩展，以满足跨越广阔地域的多个地点、每个地点都有多个计算机之间联网的需要。</strong><br><br><strong>2．广域网还应有足够的能力，使得相联的多个计算机能同时通信。</strong><br><br><strong>3．几个不同地域的局域网(包括远程单机)经公共网络相互连接也可构成一个广域网。因此，路由选择技术和不同网络的互联技术也是广域网技术的重要组成部分。</strong></p>
+<hr>
+<ul>
+<li><strong>数据报服务的特点</strong><br></li>
+<li><strong>虚电路服务与数据报服务的主要区别</strong><br></li>
+</ul>
+<hr>
+<ul>
+<li><strong>点对点协议PPP</strong><br></li>
+</ul>
+<p><strong>1.目前使用最广泛的数据链路层的协议，只支持全双工链路</strong><br><br><strong>2.PPP协议应该满足的需求</strong><br><br>&ensp; <strong>2.1.简单：对于数据链路层的帧不需要纠错，不需要序号，也不需要流量控制</strong><br><br>&ensp; <strong>2.2.封装成帧：必须规定特殊的字符作为帧定界符</strong><br><br>&ensp; <strong>2.3.透明性：异步用字节填充，同步用比特填充</strong><br><br>&ensp; <strong>2.4.多种网络层协议：同一条物理链路上同时支持多种网络层协议</strong><br><br>&ensp; <strong>2.5.多挣类型链路：串行/并行，同步/异步，低速/高速，电/光</strong><br><br>&ensp; <strong>2.6.差错检测：检测帧，有错就丢弃</strong><br><br>&ensp; <strong>2.7.检测连接状态：检测链路是否处于正常工作状态</strong><br><br>&ensp; <strong>2.8.最大传输单元：MTU</strong><br><br>&ensp; <strong>2.9.网络层地址协商：知道通信双方的网络层地址</strong><br><br>&ensp; <strong>2.10.数据压缩协商：协商数据压缩</strong><br></p>
+<ul>
+<li><strong>PPP协议的三个组成部分：</strong></li>
+</ul>
+<p><strong>1.一个方法:一个将IP数据报封装到串行链路的方法</strong><br><br><strong>2.一个协议：链路控制协议LCP，建立并维护数据链路链接</strong><br><br><strong>3.一套协议：网络控制协议NCP，PPP可以支持多种网络层协议，每个不同的网络层协议都要一个相应的NCP来配置，为网络层协议建立和配置逻辑连接。</strong><br></p>
+<ul>
+<li><strong>PPP协议的帧格式：</strong></li>
+</ul>
+<p><img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/44.png" alt="pic44"></p>
+<ul>
+<li><strong>HDLC协议的帧格式：</strong></li>
+</ul>
+<p><img src="https://ggonekim.oss-cn-chengdu.aliyuncs.com/blog%E5%9B%BE%E5%BA%8A/45.png" alt="pic45"></p>
+<hr>
+<ul>
+<li><strong>网桥的概念以及类型</strong><br></li>
+</ul>
+<p><strong>1. 网桥的概念：</strong><br><br>&ensp; <strong>1.1 网桥工作在数据链路层</strong><br><br>&ensp; <strong>1.2 它根据MAC帧的目的地址对收到的帧进行转发和过滤</strong><br><br>&ensp; <strong>1.3 当网桥收到一个帧的时候，先检查此帧的目的MAC地址</strong><br><br>&ensp; <strong>1.4 确定转发或者过滤(丢弃)</strong><br></p>
+<ul>
+<li><strong>网桥的类型</strong><br></li>
+</ul>
+<p><strong>1. 透明网桥</strong><br><br><strong>2. 源路由网桥</strong><br></p>
+<ul>
+<li><strong>网桥的优点</strong></li>
+</ul>
+<p><strong>过滤通信量，增大吞吐量</strong><br><br><strong>扩大了物理范围</strong><br><br><strong>提高了可靠性</strong><br><br><strong>可互连不同物理层、不同MAC子层和不同速率</strong><br></p>
+<hr>
+<ul>
+<li><strong>以太网的工作原理和信道的利用率</strong></li>
+</ul>
+<hr>
+<ul>
+<li><strong>纯 ALOHA 和时隙 ALOHA 的结论</strong><br></li>
+</ul>
+<p><strong>1.纯ALOHA比时隙ALOHA吞吐量更低，效率更低</strong><br><br><strong>2.纯ALOHA想发就发，时隙ALOHA只在有时间片段开始时才能发</strong></p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                </ul>
+            
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+		data-enable='false'
+        data-ae='false'
+        data-ci=''
+        data-cs=''
+        data-r=''
+        data-o=''
+        data-a=''
+        data-d='false'
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>
